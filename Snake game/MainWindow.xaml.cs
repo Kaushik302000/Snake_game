@@ -206,7 +206,7 @@ namespace Snake_game
         private async Task ShowCountDown()
         {
 
-            for (int i = 5; i >= 1; i--)
+            for (int i = 3; i >= 1; i--)
             {
                 OverlayText.Text = i.ToString();
 

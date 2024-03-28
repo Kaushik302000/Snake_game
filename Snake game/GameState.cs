@@ -28,6 +28,7 @@ namespace Snake_game
             Dir = Directions.Right;
 
             Addsnake();
+            
             AddFood();
         }
         private void Addsnake()

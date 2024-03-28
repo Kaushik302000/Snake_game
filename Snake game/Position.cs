@@ -7,14 +7,15 @@ namespace Snake_game
         public int Row {  get;}
         public int Col { get;}
         public Position(int row, int col)
-        {
+        { 
             Row = row;
             Col = col;
         }
         public Position Translate(Directions dir)
         {
-            return new Position(Row + dir.Rowoffset, Col + dir.Coloffset);
-        }
+            return new Position(Row + dir.Rowoffset, Col 
+                + dir.Coloffset);
+        }     
 
         public override bool Equals(object obj)
         {
@@ -32,7 +33,7 @@ namespace Snake_game
         {
             return EqualityComparer<Position>.Default.Equals(left, right);
         }
-
+        
         public static bool operator !=(Position left, Position right)
         {
             return !(left == right);
